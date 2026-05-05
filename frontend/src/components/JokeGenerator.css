@@ -1,0 +1,58 @@
+.joke-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.2s;
+}
+
+.joke-card:hover {
+  transform: translateY(-5px);
+}
+
+.joke-card h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.joke-card p {
+  font-family: 'Helvetica', sans-serif;
+  color: #555;
+  padding: 0 20px 20px;
+}
+
+.gradient-background {
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .joke-card {
+    margin: 10px;
+  }
+  .spinner {
+    width: 30px;
+    height: 30px;
+  }
+}
